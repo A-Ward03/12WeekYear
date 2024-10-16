@@ -41,11 +41,11 @@ nav ul li a {
 }
 
 main {
-    padding: 20px;
-    flex: 1;
+    padding: 16px;
+    flex: auto;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 section {
@@ -67,6 +67,12 @@ footer {
     padding: 10px 0;
     flex: 0;
     display: flex;
+}
+
+img > .aside {
+    display: flex;
+    flex-shrink: 1 1 auto;
+    padding: 16px;
 }
 
 .list {
