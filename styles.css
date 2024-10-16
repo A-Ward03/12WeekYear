@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: 1px solid black;
 }
 
 body {
@@ -29,10 +30,9 @@ header .logo {
 nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
-    margin: 0 15px;
+    gap: 4px;
+    padding: 4px;
+    margin-right: 8px;
 }
 
 nav ul li a {
@@ -63,15 +63,32 @@ section h2 {
 footer {
     background-color: #007ba7;
     color: white;
-    justify-content: center;
-    align-items: center;
+    gap: 16px;
     padding: 10px 0;
-    flex-shrink: 0;
+    flex: 0;
     display: flex;
-    gap: 1rem;
 }
 
-.contact-list {
+.list {
     list-style: none;
-    border: 1px solid black;
+    margin-left: 0px;
+}
+
+div.footer-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 4px;
+    margin-left: 8px;
+}
+
+p.footer-heading {
+    padding-right: 4px;
+    border-bottom: 1px solid white;
+    margin-bottom: 8px;
+}
+
+p.additional-resource {
+    margin-right: 8px;
 }
