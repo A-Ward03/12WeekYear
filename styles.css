@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
 }
 
 body {
@@ -45,7 +44,7 @@ main {
     flex: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    gap: 24px
 }
 
 section {
@@ -69,10 +68,18 @@ footer {
     display: flex;
 }
 
-img > .aside {
-    display: flex;
-    flex-shrink: 1 1 auto;
+.aside {
+    flex: 1 1 auto;
     padding: 16px;
+}
+
+.divider {
+    width: 4px;
+    background-color: black;
+}
+
+.main-body {
+    flex: 3 1 auto;
 }
 
 .list {
